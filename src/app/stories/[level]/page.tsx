@@ -19,6 +19,8 @@ import Link from 'next/link';
 const translationCache = new Map<string, { meaning: string; pronunciation: string }>();
 
 export default function ReadPage() {
+
+  const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3001';
   const params = useParams();
   const level = params.level as string;
 
@@ -65,7 +67,7 @@ export default function ReadPage() {
 
     try {
       const response = await fetch(
-        `http://localhost:3001/translate?word=${encodeURIComponent(cleanWord)}`
+        `${API_URL}/translate?word=${encodeURIComponent(cleanWord)}`
       );
       const data = await response.json();
       const result = { meaning: data.translation || 'No disponible', pronunciation: data.pronunciation || 'N/A' };
