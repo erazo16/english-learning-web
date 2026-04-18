@@ -34,7 +34,7 @@ export default function Home() {
 
           Esta pagina web esta diseñada para ti mi amor, puedas sacar todo tu potencial aprendiendo con amor.
           Encontraras ejercicios, cuentos y toda una ayuda para que puedas entender cada palabra, frase que aqui encuentres.
-
+          !TU PUEDES HACERLO!
           Para iniciar con este aprendizaje solo selecciona en el menu izquierdo ya sea ejercicios o cuentos, o si estas en celular presiona
           el icono ☰
         </p>
